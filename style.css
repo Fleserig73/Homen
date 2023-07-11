@@ -1,0 +1,60 @@
+*{
+    font-family: 'Philosopher', sans-serif;
+    color: #fff;
+}
+body, html{
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 205px;
+}
+.wrapper{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 605px;
+}
+.wrapper .quote-area{
+    display: flex;
+    justify-content: center;
+}
+.quote-area #quote{
+    font-size: 22px;
+    text-align: center;
+}
+.author-area{
+    display: flex;
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+    justify-content: flex-end;
+}
+.author-area span:first-child{
+    margin: -10px 5px 0 0;
+    font-family: monospace;
+}
+#bg{
+    background-color: black;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+#black{
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
